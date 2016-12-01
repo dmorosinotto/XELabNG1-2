@@ -31,6 +31,7 @@ $> git clone https://github.com/dmorosinotto/XELabNG1-2
 $> cd XELabNG1-2
 $> npm i -g yarn
 $> yarn
+...IGNORARE I 3 MESSAGGI warning Incorrect peer dependency "rxjs@5.0.0-beta.12".
 $> npm start
 ```
 Se tutto è andato secondo i piani, dovreste poter accedere a [http://localhost:8080](http://localhost:8080) e vedere un messaggio di benvenuto in VERDE!
