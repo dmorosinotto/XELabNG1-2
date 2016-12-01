@@ -1,15 +1,22 @@
 import { app } from "../_app.module";
+import { NameSvc } from './../services/nameSvc';
 
-app.controller("askCtrl", ["nameSvc", function(svc) {
-    var vm=this;
-    var _old = vm.name = svc.name;
-    
-    vm.show = function() {
-        svc.show(_old = vm.name);
+class AskCtrl {
+static $inject = ["nameSvc"];
+constructor(private svc: NameSvc) {
+    this._old = this.name = svc.name;
+}
+private _old;
+public name;
+
+    public show() {
+        this.svc.show(this._old = this.name);
     }
 
-    vm.undo = function() {
+    public undo() {
         //console.log("UNDO", svc.name);
-        vm.name = _old;
+        this.name = this._old;
     }
-}]);
+}
+
+app.controller("askCtrl", AskCtrl);
