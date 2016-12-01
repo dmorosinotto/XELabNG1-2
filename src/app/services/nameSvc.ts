@@ -1,17 +1,14 @@
 import { app } from "../_app.module";
 
-app.factory("nameSvc", function() {
-    var _name = "";
+export class NameSvc {
+    public name = "";
 
-    function set_Show(val) {
-        _name = val;
-        if (_name) {
-            alert("Hi, " + _name);
+    public show(val) {
+        this.name = val;
+        if (this.name) {
+            alert("Hi, " + this.name);
         } else alert("WRITE YOUR NAME");
     }
+}
 
-    return {
-        name: _name,
-        show: set_Show
-    };
-});
+app.service("nameSvc", NameSvc);
