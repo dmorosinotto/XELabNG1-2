@@ -20,8 +20,8 @@
   
   <div class="jumbotron">
     <label>NG is magic:</label>
-    <input ng-model="name" placeholder="write something...">
-    <h1>Hello {{name}}</h1>
+    <input ng-model="vm.name" placeholder="write something...">
+    <h1>Hello {{vm.name}}</h1>
   </div>
 
   <div class="jumbotron" ng-controller="askCtrl as vm">  
@@ -41,7 +41,7 @@
       </div>
 
     </div><!-- /form-inline -->
-    <h1 ng-if="name">Hello {{name}}</h1>
+    <h1 ng-if="vm.name">Hello {{vm.name}}</h1>
   </div> <!-- /jumbotron -->  
 
 </div> <!-- /container -->
