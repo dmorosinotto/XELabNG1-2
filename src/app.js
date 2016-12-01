@@ -1,4 +1,4 @@
-var app = angular.module("myapp",[]);
+
 
 app.controller("askCtrl", ["nameSvc", function(svc) {
     var vm=this;
