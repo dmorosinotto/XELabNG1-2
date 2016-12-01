@@ -26,7 +26,8 @@
         <div class="form-group">
           <label class="label-control">Name:</label>
           <div class="input-group">
-            <input ng-model="vm.name" type="text" class="form-control" placeholder="Enter your name...">
+            <input ng-model="vm.name" type="text" class="form-control" 
+                keys on-esc="vm.undo()" placeholder="Enter your name...">
             <span class="input-group-btn">
               <button ng-click="vm.show()" class="btn btn-primary" type="button">Ok!</button>
             </span>
