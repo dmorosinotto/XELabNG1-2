@@ -33,8 +33,10 @@ $> cd XELabNG1-2
 $> npm i -g yarn
 $> yarn
 ```
-Attendere la fine dell'installazione ed IGNORARE eventuali messaggi di *warning* es:
-```Incorrect peer dependency "rxjs@5.0.0-beta.12".```
+Attendere la fine dell'installazione ed IGNORARE eventuali messaggi di **warning** es:
+ ```Incorrect peer dependency "rxjs@5.0.0-beta.12".```
+> ATTENZIONE: Su Windows IGNORARE l'errore relativo a **fsevents** ```error Error running install script for optional dependency: "C:\\Dev\\Test\\XELabNG1-2\\node_modules\\fsevents: Command...```
+> e provare a proseguire lo stesso, dovrebbe funzionare!
 
 ### TEST
 - Per verificare che tutto funzioni con NG1 + ng-metadata eseguire:
