@@ -8,7 +8,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="assets/bootstrap.min.css">
 </head>
-<body ng-app>
+<body ng-app="myapp">
 <nav class="navbar navbar-inverse">
   <a class="navbar-brand" href="#">FEEDBACK</a>
   <ul class="nav navbar-nav">
@@ -18,13 +18,28 @@
 
 <div class="container">
 
-  <div class="jumbotron">
-    <label>NG is magic:</label>
-    <input ng-model="name" placeholder="write something...">
-    <h1>Hello {{name}}</h1>
+  <div class="jumbotron" ng-controller="askCtrl">  
+
+    <div class="row form-inline">
+      
+      <div class="col-md-8">
+        <div class="form-group">
+          <label class="label-control">Name:</label>
+          <div class="input-group">
+            <input ng-model="name" type="text" class="form-control" placeholder="Enter your name...">
+            <span class="input-group-btn">
+              <button ng-click="show()" class="btn btn-primary" type="button">Ok!</button>
+            </span>
+          </div><!-- /input-group -->
+        </div><!-- /form-group -->
+      </div>
+
+    </div><!-- /form-inline -->
+    <h1 ng-if="name">Hello {{name}}</h1>
   </div> <!-- /jumbotron -->  
 
 </div> <!-- /container -->
   <script src="dist/bundle.js"></script>
+  <script src="src/app.js"></script>
 </body>
 </html>
