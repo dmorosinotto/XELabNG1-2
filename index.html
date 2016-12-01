@@ -23,18 +23,10 @@
     <div class="row form-inline">
       
       <div class="col-md-8">
-        <div class="form-group">
-          <label class="label-control">Name:</label>
-          <div class="input-group">
-            <input ng-model="vm.name" type="text" class="form-control" 
-                keys on-esc="vm.undo()" placeholder="Enter your name...">
-            <span class="input-group-btn">
-              <button ng-click="vm.show()" class="btn btn-primary" type="button">Ok!</button>
-            </span>
-          </div><!-- /input-group -->
-        </div><!-- /form-group -->
+        <ng-include src="'src/app/components/askCmp.html'">
+        </ng-include>
       </div>
-
+      
     </div><!-- /form-inline -->
     <h1 ng-if="vm.name">Hello {{vm.name}}</h1>
   </div> <!-- /jumbotron -->  
