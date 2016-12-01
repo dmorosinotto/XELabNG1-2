@@ -23,7 +23,7 @@ module.exports = {
     rules: [
 		{
         test: /\.ts$/,
-        use: 'awesome-typescript-loader'
+        use: 'awesome-typescript-loader' //ONLY NG1-METADATA
         //use: '@ngtools/webpack' //ONLY NG2
       },
       {
@@ -32,7 +32,7 @@ module.exports = {
       },
 	    {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
+        use: [ 'style-loader', 'css-loader' ] //ONLY NG1-METADATA
         //use: 'raw-loader', //ONLY NG2
       }
     ]
