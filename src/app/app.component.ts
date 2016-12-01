@@ -1,8 +1,8 @@
-import { Component, Inject } from 'ng-metadata/core';
+import { Component, Inject } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: require('./app.component.html'),
+  templateUrl: './app.component.html',
 })
 export class AppComponent {
     public title: string;
