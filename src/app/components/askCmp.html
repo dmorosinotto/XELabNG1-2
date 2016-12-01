@@ -4,7 +4,7 @@
         <input ng-model="vm.name" type="text" class="form-control" 
             keys on-esc="vm.undo()" placeholder="Enter your name...">
         <span class="input-group-btn">
-            <button ng-click="vm.show()" class="btn btn-primary" type="button">Ok!</button>
+            <button ng-click="vm.show(vm.name)" class="btn btn-primary" type="button">Ok!</button>
         </span>
     </div><!-- /input-group -->
 </div><!-- /form-group -->

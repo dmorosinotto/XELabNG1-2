@@ -1,7 +1,7 @@
 import { app } from "../_app.module";
 import { NameSvc } from './../services/nameSvc';
 
-class AskCtrl {
+export class AskCtrl {
 static $inject = ["nameSvc"];
 constructor(private svc: NameSvc) {
     this._old = this.name = svc.name;
@@ -9,8 +9,8 @@ constructor(private svc: NameSvc) {
 private _old;
 public name;
 
-    public show() {
-        this.svc.show(this._old = this.name);
+    public show(name) {
+        this.svc.show(this._old = name);
     }
 
     public undo() {
