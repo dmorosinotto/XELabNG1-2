@@ -24,7 +24,7 @@
     <h1>Hello {{name}}</h1>
   </div>
 
-  <div class="jumbotron" ng-controller="askCtrl">  
+  <div class="jumbotron" ng-controller="askCtrl as vm">  
 
     <div class="row form-inline">
       
@@ -32,9 +32,9 @@
         <div class="form-group">
           <label class="label-control">Name:</label>
           <div class="input-group">
-            <input ng-model="name" type="text" class="form-control" placeholder="Enter your name...">
+            <input ng-model="vm.name" type="text" class="form-control" placeholder="Enter your name...">
             <span class="input-group-btn">
-              <button ng-click="show()" class="btn btn-primary" type="button">Ok!</button>
+              <button ng-click="vm.show()" class="btn btn-primary" type="button">Ok!</button>
             </span>
           </div><!-- /input-group -->
         </div><!-- /form-group -->
