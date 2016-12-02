@@ -1,6 +1,21 @@
-import * as angular from "angular";
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
-// DECLARE NG1 MODULE AND EVENTUALLY DEFINE constants + config / run
-export let app = angular.module("myapp", [])
-    //.constant("WAIT",3000)
-;
+import { AppComponent } from './app.component';
+import { FeedbackModule } from './feedback/_feedback.module';
+
+
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    FeedbackModule,
+  ],
+  providers: [ 
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
