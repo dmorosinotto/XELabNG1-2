@@ -1,5 +1,5 @@
 const path = require('path');
-//const ngtools = require('@ngtools/webpack'); //ONLY NG2
+const ngtools = require('@ngtools/webpack'); //ONLY NG2
 
 module.exports = {
   resolve: {
@@ -15,16 +15,16 @@ module.exports = {
     filename: "bundle.js"
   },
   plugins: [
-    //new ngtools.AotPlugin({
-    //  tsConfigPath: './tsconfig.json'
-    //}) // ONLY NG2
+    new ngtools.AotPlugin({
+      tsConfigPath: './tsconfig.json'
+    }) // ONLY NG2
   ],
   module: {
     rules: [
 		{
         test: /\.ts$/,
-        use: 'awesome-typescript-loader' //ONLY NG1-METADATA
-        //use: '@ngtools/webpack' //ONLY NG2
+        //use: 'awesome-typescript-loader' //ONLY NG1-METADATA
+        use: '@ngtools/webpack' //ONLY NG2
       },
       {
         test: /\.html$/,
@@ -32,8 +32,8 @@ module.exports = {
       },
 	    {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ] //ONLY NG1-METADATA
-        //use: 'raw-loader', //ONLY NG2
+        //use: [ 'style-loader', 'css-loader' ] //ONLY NG1-METADATA
+        use: 'raw-loader', //ONLY NG2
       }
     ]
   },
