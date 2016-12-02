@@ -1,10 +1,12 @@
 import { app } from "../_app.module";
 import { NameSvc } from './../services/nameSvc';
 
+import '../styles.css' //ONLY TO SHOW INLINE CSS FOR COMPONENTS VIA WEBPACK
+
 export const welcomeCmp: angular.IComponentOptions = {
     //NG 1.5+ angular.component syntactic sugar - read more https://docs.angularjs.org/guide/component
         controller: WelcomeCtrl,
-        templateUrl: 'src/app/components/welcomeCmp.html'
+        template: require('./welcomeCmp.html') //WEBPACK MAGIC INLINE HTML - ATTENTION REPLACE tempalteUrl: -> template: + relative path
     }
 
 export class WelcomeCtrl {

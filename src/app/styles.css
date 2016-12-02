@@ -1,0 +1,4 @@
+/* ONLY TO SHOW INLINE CSS FOR COMPONENTS */
+welcome-cmp { border: 2px solid red }
+ask-cmp { border: 2px solid green }
+[keys] { background-color: yellow }

@@ -10,7 +10,7 @@ export const askCmp: angular.IComponentOptions = {
             res: "&onRes"
         },
         controller: AskCmp,
-        templateUrl: 'src/app/components/askCmp.html'
+        template: require('./askCmp.html') //WEBPACK MAGIC INLINE HTML - ATTENTION REPLACE tempalteUrl: -> template: + relative path
     }
 
 class AskCmp {
