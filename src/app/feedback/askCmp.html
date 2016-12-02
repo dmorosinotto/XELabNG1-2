@@ -1,11 +1,11 @@
 <div class="form-group">
     <label class="label-control">{{req}}</label>
     <div class="input-group">
-        <input ng-model="txt" type="text" class="form-control" 
-            keys on-esc="undo()" placeholder="{{msg}}">
+        <input [(ngModel)]="txt" type="text" class="form-control" 
+            keys (onEsc)="undo()" [placeholder]="msg">
         <span class="input-group-btn">
-            <button ng-click="okemit(txt)" class="btn btn-primary" type="button">Ok!</button>
+            <button (click)="okemit(txt)" class="btn btn-primary" type="button">Ok!</button>
         </span>
     </div><!-- /input-group -->
-<!--<pre>{{val}} = {{vm.name}} | {{txt}}</pre>-->
+<!--<pre>{{val}} | {{txt}}</pre>-->
 </div><!-- /form-group -->

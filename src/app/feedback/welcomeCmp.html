@@ -2,11 +2,11 @@
     <div class="row form-inline">
         
         <div class="col-md-8">
-        <ask-cmp msg="'Enter your name...'" req="What's your name?" 
-            val="svc.name" on-res="set($event)" ></ask-cmp>
+        <ask-cmp msg="Enter your name..." req="What's your name?" 
+            [val]="svc.name" (res)="set($event)" ></ask-cmp>
         </div>
         
     </div><!-- /form-inline -->
-    <h1 ng-if="svc.name">Hello {{svc.name}}</h1>
+    <h1 *ngIf="svc.name">Hello {{svc.name}}</h1>
     <!--<pre>svc={{svc | json}}</pre>-->
 </div> <!-- /jumbotron -->
