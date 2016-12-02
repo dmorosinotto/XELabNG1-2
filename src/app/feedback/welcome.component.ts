@@ -1,4 +1,5 @@
 import { Component, Inject } from "ng-metadata/core";
+import { NameService } from './name.service';
 
 import '../styles.css' //ONLY TO SHOW INLINE CSS FOR COMPONENTS VIA WEBPACK
 
@@ -7,7 +8,7 @@ import '../styles.css' //ONLY TO SHOW INLINE CSS FOR COMPONENTS VIA WEBPACK
     template: require('./welcomeCmp.html') //WEBPACK MAGIC INLINE HTML
 })
 export class WelcomeComponent {
-constructor(@Inject("nameSvc") public svc) {}
+constructor(public svc: NameService) {}
 
     public set(name) {
         this.svc.show(name);

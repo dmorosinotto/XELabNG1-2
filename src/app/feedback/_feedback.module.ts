@@ -4,6 +4,7 @@ import myapp from '../index'; //OLD-LEGACY NG1 APP module.name
 
 import { AskComponent } from './ask.component';
 import { WelcomeComponent } from './welcome.component';
+import { NameService } from './name.service';
 
 
 
@@ -16,6 +17,7 @@ import { WelcomeComponent } from './welcome.component';
       WelcomeComponent
   ], 
   providers: [
+      NameService
   ]
 })
 export class FeedbackModule { }

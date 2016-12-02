@@ -1,6 +1,7 @@
-import { app } from "../_app.module";
+import { Injectable } from 'ng-metadata/core'
 
-export class NameSvc {
+@Injectable()
+export class NameService {
     public name = "";
 
     public show(val) {
@@ -10,5 +11,3 @@ export class NameSvc {
         } else alert("WRITE YOUR NAME");
     }
 }
-
-app.service("nameSvc", NameSvc);
