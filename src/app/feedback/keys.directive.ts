@@ -7,8 +7,7 @@ export class KeysDirective {
     constructor() {}
 
     @HostListener("keyup", ["$event"])
-    onKeyUp(ev) {
-        console.log(ev)
+    onKeyUp(ev: KeyboardEvent) {
         if (ev.which==27) //ESC 
             this.onEsc.emit(ev);
     }

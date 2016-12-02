@@ -1,7 +1,7 @@
 import { Component, Inject } from "ng-metadata/core";
 import { NameService } from './name.service';
 
-import '../styles.css' //ONLY TO SHOW INLINE CSS FOR COMPONENTS VIA WEBPACK
+//import '../styles.css' //ONLY TO SHOW INLINE CSS FOR COMPONENTS VIA WEBPACK
 
 @Component({
     selector: "welcome-cmp",
