@@ -18,18 +18,7 @@
 
 <div class="container">
   
-  <div class="jumbotron" ng-controller="askCtrl as vm">  
-
-    <div class="row form-inline">
-      
-      <div class="col-md-8">
-        <ask-cmp msg="'Enter your name...'" req="What's your name?" 
-          val="vm.name" on-res="vm.show($event)" ></ask-cmp>
-      </div>
-      
-    </div><!-- /form-inline -->
-    <h1 ng-if="vm.name">Hello {{vm.name}}</h1>
-  </div> <!-- /jumbotron -->  
+  <welcome-cmp></welcome-cmp>  
 
 </div> <!-- /container -->
   <script src="dist/bundle.js"></script>

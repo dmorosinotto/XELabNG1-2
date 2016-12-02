@@ -1,6 +1,12 @@
 import { app } from "../_app.module";
 import { NameSvc } from './../services/nameSvc';
 
+export const welcomeCmp: angular.IComponentOptions = {
+    //NG 1.5+ angular.component syntactic sugar - read more https://docs.angularjs.org/guide/component
+        controller: AskCtrl,
+        templateUrl: 'src/app/components/welcomeCmp.html'
+    }
+
 export class AskCtrl {
 static $inject = ["nameSvc"];
 constructor(private svc: NameSvc) {
@@ -20,4 +26,5 @@ public name;
     }
 }
 
-app.controller("askCtrl", AskCtrl);
+welcomeCmp.controller = AskCtrl; //FIX undefined - BECAUSE class NOT HOISTING!
+app.component("welcomeCmp", welcomeCmp);
