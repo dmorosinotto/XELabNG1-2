@@ -1,4 +1,4 @@
-import { Component, Inject } from "ng-metadata/core";
+import { Component, Inject } from "@angular/core";
 import { NameService } from './name.service';
 
 //import '../styles.css' //ONLY TO SHOW INLINE CSS FOR COMPONENTS VIA WEBPACK
