@@ -2,7 +2,7 @@ import { Component, OnChanges, Input, Output, EventEmitter } from "@angular/core
 
 @Component({
     selector: "ask-cmp", 
-    template: require('./askCmp.html') //WEBPACK MAGIC INLINE HTML
+    templateUrl: './askCmp.html'
 })
 export class AskComponent implements OnChanges {
     constructor() {
@@ -10,11 +10,11 @@ export class AskComponent implements OnChanges {
         this.txt = this.val || "";
     }
 
-    @Output("onRes") public res = new EventEmitter<string>() //external event handler
+    @Output() public res = new EventEmitter<string>() //external event handler
     private txt: string;//internal text bound
-    @Input("<") public msg: string; //placeholder text
-    @Input("@") public req: string; //label / question
-    @Input("=") public val: any;    //external vm.name
+    @Input() public msg: string; //placeholder text
+    @Input() public req: string; //label / question
+    @Input() public val: any;    //external vm.name
 
     public undo() {
         this.txt = this.val || "";

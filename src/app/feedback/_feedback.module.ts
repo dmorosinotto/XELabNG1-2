@@ -14,6 +14,9 @@ import { KeysDirective } from './keys.directive';
       CommonModule,
       FormsModule
   ],
+  exports: [
+      WelcomeComponent
+  ],
   declarations: [
       AskComponent,
       WelcomeComponent,

@@ -5,7 +5,7 @@ import { NameService } from './name.service';
 
 @Component({
     selector: "welcome-cmp",
-    template: require('./welcomeCmp.html') //WEBPACK MAGIC INLINE HTML
+    templateUrl: './welcomeCmp.html'
 })
 export class WelcomeComponent {
 constructor(public svc: NameService) {}
