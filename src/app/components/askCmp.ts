@@ -1,21 +1,17 @@
 import { app } from './../_app.module';
 
-export function askCmp(): angular.IDirective {
-    //DDO = Directive Definition Object - read more https://docs.angularjs.org/api/ng/service/$compile
-    return {
-        restrict: "E",
-        scope: {
+
+export const askCmp: angular.IComponentOptions = {
+    //NG 1.5+ angular.component syntactic sugar - read more https://docs.angularjs.org/guide/component
+        bindings: {
             msg: "<",
             req: "@",
             val: "=",
             res: "&onRes"
         },
         controller: AskCmp,
-        controllerAs: "$ctrl",
-        bindToController: true,
         templateUrl: 'src/app/components/askCmp.html'
     }
-}
 
 class AskCmp {
     constructor() {
@@ -43,4 +39,5 @@ class AskCmp {
 }
 
 
-app.directive("askCmp", askCmp )
+askCmp.controller = AskCmp; //FIX undefined - BECAUSE class NOT HOISTING!
+app.component("askCmp", askCmp )
