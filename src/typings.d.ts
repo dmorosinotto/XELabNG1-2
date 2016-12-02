@@ -12,16 +12,3 @@ declare module "*.css" {
     export default content;
 }
 
-// MINIMAL DEFINITION FOR NODE MODULES WEBPACK require(...);
-declare var __dirname: string;
-declare var __filename: string;
-declare var require: RequireFn;
-declare var module: NodeModule;
-interface RequireFn {
-    (id: string): any
-}
-interface NodeModule {
-    id: any;
-    require: RequireFn;
-    exports: any;
-}

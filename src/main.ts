@@ -1,9 +1,8 @@
 // import polyfills
 import './polyfills.ts';
-import './vendor.ts';
 
 
-import { platformBrowserDynamic } from 'ng-metadata/platform-browser-dynamic';
-import { FeedbackModule } from './app/feedback/_feedback.module';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app/_app.module';
 
-platformBrowserDynamic().bootstrapModule(FeedbackModule);
+platformBrowserDynamic().bootstrapModule(AppModule);

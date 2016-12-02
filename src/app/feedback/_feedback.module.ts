@@ -1,6 +1,6 @@
-import { NgModule } from 'ng-metadata/core';
-
-import myapp from '../index'; //OLD-LEGACY NG1 APP module.name
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { AskComponent } from './ask.component';
 import { WelcomeComponent } from './welcome.component';
@@ -11,7 +11,8 @@ import { KeysDirective } from './keys.directive';
 
 @NgModule({
   imports: [
-      myapp
+      CommonModule,
+      FormsModule
   ],
   declarations: [
       AskComponent,
