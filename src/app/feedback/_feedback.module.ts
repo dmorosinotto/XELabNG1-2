@@ -3,6 +3,7 @@ import { NgModule } from 'ng-metadata/core';
 import myapp from '../index'; //OLD-LEGACY NG1 APP module.name
 
 import { AskComponent } from './ask.component';
+import { WelcomeComponent } from './welcome.component';
 
 
 
@@ -11,7 +12,8 @@ import { AskComponent } from './ask.component';
       myapp
   ],
   declarations: [
-      AskComponent
+      AskComponent,
+      WelcomeComponent
   ], 
   providers: [
   ]
