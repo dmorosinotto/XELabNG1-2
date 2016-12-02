@@ -23,8 +23,8 @@
     <div class="row form-inline">
       
       <div class="col-md-8">
-        <ng-include src="'src/app/components/askCmp.html'">
-        </ng-include>
+        <ask-cmp msg="'Enter your name...'" req="What's your name?" 
+          val="vm.name" on-res="vm.show($event)" ></ask-cmp>
       </div>
       
     </div><!-- /form-inline -->
