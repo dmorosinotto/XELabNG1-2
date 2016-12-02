@@ -3,11 +3,10 @@
         
         <div class="col-md-8">
         <ask-cmp msg="'Enter your name...'" req="What's your name?" 
-            val="$ctrl.name" on-res="$ctrl.show($event)" ></ask-cmp>
+            val="$ctrl.svc.name" on-res="$ctrl.set($event)" ></ask-cmp>
         </div>
         
     </div><!-- /form-inline -->
-    <h1 ng-if="$ctrl.name">Hello {{$ctrl.name}}</h1>
-    <pre>{{$ctrl.name}} === 
-svc={{$ctrl.svc | json}}</pre>
+    <h1 ng-if="$ctrl.svc.name">Hello {{$ctrl.svc.name}}</h1>
+    <pre>svc={{$ctrl.svc | json}}</pre>
 </div> <!-- /jumbotron -->
