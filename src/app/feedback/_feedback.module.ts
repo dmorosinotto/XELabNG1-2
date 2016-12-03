@@ -6,6 +6,7 @@ import { AskComponent } from './ask.component';
 import { WelcomeComponent } from './welcome.component';
 import { NameService } from './name.service';
 import { KeysDirective } from './keys.directive';
+import { QuestionService } from './question.service';
 
 
 
@@ -16,10 +17,11 @@ import { KeysDirective } from './keys.directive';
   declarations: [
       AskComponent,
       WelcomeComponent,
-      KeysDirective
+      KeysDirective,
   ], 
   providers: [
-      NameService
+      NameService,
+      QuestionService,
   ]
 })
-export class FeedbackModule { }
+export class FeedbackModule {}
