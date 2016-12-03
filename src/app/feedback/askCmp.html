@@ -2,7 +2,7 @@
     <label class="label-control">{{$ctrl.req}}</label>
     <div class="input-group">
         <input ng-model="$ctrl.txt" type="text" class="form-control" 
-            keys on-esc="$ctrl.undo()" placeholder="{{$ctrl.msg}}">
+            keys on-esc="$ctrl.undo()" on-enter="$ctrl.okemit($ctrl.txt)" placeholder="{{$ctrl.msg}}">
         <span class="input-group-btn">
             <button ng-click="$ctrl.okemit($ctrl.txt)" class="btn btn-primary" type="button">Ok!</button>
         </span>
