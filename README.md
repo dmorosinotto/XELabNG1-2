@@ -1,57 +1,30 @@
 # XELabNG1-2
-Sessione XE Lab NG1 to NG2 del 02/12/2016 by Daniele Morosinotto
 
-## PREPARATIVI
-- Prima di venire alla sessione verificare di avere i seguenti Pre-requisiti 
-installati correttamente sul vostro PC o Mac, eseguendo i seguenti comandi da terminale
-```terminal
-$> git --version
-git version x.y.z    (VA BENE QUALSIASI VERSIONE)
+This repo was born as codelab of [My session of 2nd Dec 2016](http://www.xedotnet.org/eventi/lab-angular-1-to-2-lab/) about migration from Angular 1.x to NG2
 
-$> node -v
-v6.9.1
-
-$> npm -v
-3.8.10
-
-$> code -v
-1.7.2
-```
-Se necessario installare le ultime versioni di **VS Code** [download](https://code.visualstudio.com) e **Node + NPM** LTS [download](https://nodejs.org) e di **GIT** [download](https://git-scm.com/)
-
-## DOWNLOAD CODICE
-
-- Scaricare il codice di questa repository:
-```terminal
-$> git clone https://github.com/dmorosinotto/XELabNG1-2
-```
+It use a simple sample the classic "Hello World" angular application, but with some small tricks to modernize it 
+(like [Boostrap](http://getbootstrap.com/css/) styles and a little [directive](https://github.com/dmorosinotto/XELabNG1-2/blob/0-basics/src/app.js#L33-L55) to handle undo when you press ESC)
 
 
-- Ed eseguire i seguenti comandi per installare i pacchetti necessari per lo svolgimento del Lab
-```terminal
-$> cd XELabNG1-2
-$> npm i -g yarn
-$> yarn
-```
-Attendere la fine dell'installazione ed IGNORARE eventuali messaggi di **warning** es:
- ```Incorrect peer dependency "rxjs@5.0.0-beta.12".```
-> ATTENZIONE: Su Windows IGNORARE l'errore relativo a **fsevents** ```error Error running install script for optional dependency: "C:\\Dev\\Test\\XELabNG1-2\\node_modules\\fsevents: Command...```
-> e provare a proseguire lo stesso, dovrebbe funzionare!
+You'll find an **Intro Guide** [IT](docs/IT/ATeam.md) / [EN](docs/EN/ATeam.md) 
+that explains the motivations and howto to evolve you code from $scope to NG2 [step-by-step!](https://github.com/dmorosinotto/XELabNG1-2/commits/ng2) 
 
-### TEST
-- Per verificare che tutto funzioni con NG1 + ng-metadata eseguire:
-```
-$> git checkout -t origin/test
-$> npm start
-```
-e navigare [http://localhost:8080](http://localhost:8080) dovreste vedere un messaggio di *TUTTO OK in VERDE*!
+ 
+ Even if you are not interested in the NG2 migration, I hope that you take the time to walkthrought this repo 
+ possibly to learn a way to write better [Angular 1.x](https://angularjs.org/) app adopting 
+ some common [best](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md)-[practices](https://github.com/toddmotto/angular-styleguide), 
+ and leveraging the power of [Typescipt](https://www.typescriptlang.org/) and [ng-metadata](https://github.com/ngParty/ng-metadata) 
+ to have a cleaner codebase that will be ready for a migration to [NG2](https://angular.io/).
 
-- Una volta provato, terminare l'esecuzione con `CTRL+C` da teminale, 
-- Rifare il test anche per NG2 eseguendo:
-```terminal
-$> git checkout -t origin/test2
-$> npm start
-```
-e navigare [http://localhost:8080](http://localhost:8080) dovreste vedere un messaggio di *TUTTO OK in VERDE*!
+`With all my <3 for the Angular Community` :heart:
 
-Se tutto è andato secondo i piani, dovreste esser pronti per il corso! 
+
+
+# SOME REFERENCE:
+- Official ng-metadata [documentation](https://hotell.gitbooks.io/ng-metadata/content/)
+- Angular [Style guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md) by [John Papa](https://twitter.com/John_Papa)
+- Angular [Best practices](https://github.com/toddmotto/angular-styleguide) by [Todd Motto](https://twitter.com/toddmotto)
+- [Component architecture](https://teropa.info/blog/2015/10/18/refactoring-angular-apps-to-components.html) by [Tero Parviainen](https://twitter.com/teropa)
+
+- Official Angular2 [upgrade guide](https://angular.io/docs/ts/latest/guide/upgrade.html)
+- Hybrid [ng1-NG2 app using Router](https://vsavkin.com/migrating-angular-1-applications-to-angular-2-in-5-simple-steps-40621800a25b#.ed3zf840d) by [Victor Savkin](https://twitter.com/victorsavkin)
