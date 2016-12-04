@@ -56,10 +56,14 @@ e navigare [http://localhost:8080](http://localhost:8080) dovreste vedere un mes
 
 Se tutto è andato secondo i piani, dovreste esser pronti per il corso! 
 
-##INTRODUZIONE
-Qui trovate una piccola ["guida" al contenuto e alle motivazioni](ATEAM.md) di questo corso.
+---
 
-##ESERCIZI
+## INTRODUZIONE
+
+Qui trovate una piccola ["guida" al contenuto e alle motivazioni](ATEAM.md) di questo corso, che vi consiglio di leggere soprattutto i contributi video :joy:.
+
+## ESERCIZI
+
 Una volta che avrete seguito tutta l'[evoluzione del codice](https://github.com/dmorosinotto/XELabNG1-2/commits/master)
 , vi consiglio di provare a risolvere 4 semplici [esercizi](https://github.com/dmorosinotto/XELabNG1-2/tree/exercise) 
 a partire da `$> git checkout -t origin/exercise`:
@@ -70,3 +74,6 @@ a partire da `$> git checkout -t origin/exercise`:
 Ovviamente nella repo trovate anche un branch con la [soluzione finale](https://github.com/dmorosinotto/XELabNG1-2/tree/solution) e dei tag speicifi x i 3 esercizi, 
 ma secondo me è meglio che proviate a mettere in pratica quel che ho cercato di spiegarvi nella guida passo-passo
 per provare con mano quanto difficile :scream: possa esser scrivere del codice con Typescript e ng-metadata :wink:.
+
+> Typescript all the Things - FTW 
+> by Daniele
