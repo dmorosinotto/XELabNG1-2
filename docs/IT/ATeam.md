@@ -16,7 +16,7 @@ Si non sto [scherzando (video)](https://www.youtube.com/watch?v=mD-69PjevyA) :sm
 , altrimenti mi sà che dovrete accontentarvi di usare "la sua creatura" [**Typescipt**](https://www.typescriptlang.org/) 
 nella parte di **SBERLA**: perchè IMHO c'è un modo _più pulito e "figo" :sunglasses: _ di applicare al meglio le 
 [best](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md)-[practices](https://github.com/toddmotto/angular-styleguide) 
-di Angular 1.x senza scrivere :100:x:100:x:100: function JS 
+di Angular 1.x senza scrivere :100: function JS 
 (ndr: Io :heart: Javascript, e penso che sia il linguaggio PIU' POTENTE attualmente disponibile UNIVERSALMENTE
 , ma al contempo [_"la potenza è nulla senza il controllo"_ (video)](https://www.youtube.com/watch?v=5qanlirrRWs) 
 e Typescript vi regala IL CONTROLLO per sfruttare al meglio la POTENZA di JS!)

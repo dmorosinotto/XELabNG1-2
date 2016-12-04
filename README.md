@@ -28,4 +28,4 @@ I hope you can take the time to walk trought the commits, and possibly find/lear
 - [NG-Migrate](http://ngmigrate.telerik.com/) resources by KendoUI
 - Official Angular2 [upgrade guide](https://angular.io/docs/ts/latest/guide/upgrade.html)
 - Hybrid [ng1-NG2 app using Router](https://vsavkin.com/migrating-angular-1-applications-to-angular-2-in-5-simple-steps-40621800a25b#.ed3zf840d) by [Victor Savkin](https://twitter.com/victorsavkin)
-- Getting to Angular2 [(video NGEurope 2016)](https://www.youtube.com/watch?v=2b-tEis9k4M) by [Jen Bourey](@jbourey)
+- Getting to Angular2 [(video NGEurope 2016)](https://www.youtube.com/watch?v=2b-tEis9k4M) by [Jen Bourey](https://twitter.com/jbourey)
