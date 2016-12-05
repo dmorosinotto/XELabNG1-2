@@ -61,5 +61,5 @@ PS: Se siete stanchi di leggere commit, e volete provare a "sporcarvi le mani" q
 
 Alla fine non vi resta che un'ultima cosa da fare: [decidere se migrare da Angular 1.x ad NG2 (video)](https://youtu.be/spOBkd0P5Mc) 
 
-> ["Vado matto per i piani ben riusciti!"](https://youtu.be/ROisoQ4MY5k) 
+> ["Vado matto per i piani ben riusciti!" (video)](https://youtu.be/ROisoQ4MY5k) 
 > by Col. John "HANNIBAL" Smith

@@ -31,7 +31,7 @@ starring as **MURDOCK**: becouse only a _"crazy man"_ would be able to create a 
 <img height="50px" align="right" src="https://www.loc.gov/exhibits/treasures/images/tm015-th.jpg" alt="We want You!" /> 
 
 - **B.A. BARACUS** starring by **YOU**: because to improve and adapt your code to be ready for migration
-you'll have to be willing to literally _"hammer it" _ if needed, especially if you are still using $scope... 
+you'll have to be willing to literally _"hammer it"_ if needed, especially if you are still using $scope... 
 
 
 <img width="50px" align="right" src="http://www.sergiobonelli.it/userUpload/1366641829022.jpg" alt="Ziggy" /> 
@@ -49,16 +49,16 @@ and some minor changes due to the [new binding syntax of NG2](https://angular.io
  for [params] and (events) in the template ([take a look of commit tags 3.5 - 3.4](https://github.com/dmorosinotto/XELabNG1-2/compare/3.3...3.5))
 
 In any case, even if you choose not to migrate to NG2, I recommend taking a look at the code of this repo,
-because IMHO: you might find a way to [write "better" Angular 1.x app](https://github.com/dmorosinotto/XELabNG1-2/compare/0-basics...1.9) 
+because IMHO: you might find a ["better way"](https://github.com/dmorosinotto/XELabNG1-2/compare/0-basics...1.9) to write an Angular 1.x app 
 with a simpler, cleaner and manageble code! 
 This is mainly due to the use of [Typescript](https://github.com/dmorosinotto/XELabNG1-2/tree/1-typescript),
  that as "side effect" gives you all the benefits of :tada: intellisence and typecheck of your full code base :tada:!
 
-If you think, there must be a reason [**why the Angular Team chosen to write NG2 with Typescript](https://vsavkin.com/writing-angular-2-in-typescript-1fa77c78d8e8#.fgkgrxv3v), don't you agree :exclamation::question::exclamation:
+If you think, there must be a reason [**why the Angular Team chosen to write NG2 with Typescript**](https://vsavkin.com/writing-angular-2-in-typescript-1fa77c78d8e8#.fgkgrxv3v), don't you agree :exclamation::question::exclamation:
 
 If you are tired of reading commits, and want to try to "get your hands dirty" Here you find the instructions to configure the [Code LAB and try some Exercises](XELab.md). 
 
 Finally you just have one last thing to do: [decide if you'll migrate from Angular 1.x to NG2 (video)](https://www.youtube.com/watch?v=RhlXqYiTz2Q) 
 
-> ["I love it when a plan comes together!"](https://www.youtube.com/watch?v=FPQlXNH36mI) 
+> ["I love it when a plan comes together!" (video)](https://www.youtube.com/watch?v=FPQlXNH36mI) 
 > by Col. John "HANNIBAL" Smith

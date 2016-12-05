@@ -11,7 +11,7 @@ Here you'll find an **Intro Guide** [IT](docs/IT/ATeam.md) / [EN](docs/EN/ATeam.
 that explains the motivations and how to evolve you code from $scope to NG2 [step-by-step!](https://github.com/dmorosinotto/XELabNG1-2/commits/ng2) 
  
 And one more thing: even if you are not interested in the [NG2](https://angular.io/) migration, 
-I hope you can take the time to walk trought the commits, and possibly find/learn a way to write "better" Angular 1.x app adopting 
+I hope you can take the time to walk trought the commits, and possibly find/learn a "better way" to write an Angular 1.x app adopting 
  some common [best](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md)-[practices](https://github.com/toddmotto/angular-styleguide), 
  and leveraging the power of [Typescipt](https://www.typescriptlang.org/) and [ng-metadata](https://github.com/ngParty/ng-metadata) 
  to have a cleaner codebase, even if you want to keep using [Angular 1.x](https://angularjs.org/).
